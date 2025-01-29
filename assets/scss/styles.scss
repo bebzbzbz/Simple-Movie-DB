@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "Bowlby One";
+    src: url(../fonts/BowlbyOne-Regular.ttf);
+}
+@font-face {
+    font-family: "Domine";
+    src: url(../fonts/Domine-VariableFont_wght.ttf);
+}
+
+// === VARIABLES ===
+$inputs: #fff;
+$cards: #ff69c1;
+$bg: #ffe014;
+
+// === SHARED STYLES ===
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Domine", serif;
+    background-color: $bg;
+    text-align: center;
+    padding: 4rem 14vw;
+}
+
+h1, h3 {
+    font-family: "Bowlby One";
+    font-weight: normal;
+}
+
+input {
+    border: none;
+}
+
+input, button {
+    padding: 1.2rem;
+    font-family: "Domine", serif;
+    letter-spacing: 1px;
+    text-align: center;
+    background-color: $inputs;
+}
+
+button {
+    cursor: pointer;
+}
+
+#moviesWrapper > div, button, input {
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px black;
+    border: 1px solid black;
+}
+
+// === CLASSES ===
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 100%;
+}
+
+// === HEADER ===
+header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+
+    .title {
+        margin-bottom: 3rem;
+        h1 {
+            font-size: 8rem;
+        }
+    }
+    .inputs-wrapper {    
+        #searchInput {
+            grid-column: span 3;
+        }
+    }
+}
+
+// === MOVIE AREA ===
+#moviesWrapper > div {
+    padding: 4rem 3rem 4.5rem;
+    background-color: $cards;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    gap: 1.6rem;
+    justify-content: space-between;
+
+    h3 {
+        font-size: 2.1rem;
+    }
+}

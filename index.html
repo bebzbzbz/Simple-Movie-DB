@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag 21: Asynchrone Programmierung</title>
+    <script type="module" src="./assets/ts/app.ts"></script>
+    <script type="module" src="./assets/ts/movies.ts"></script>
+    <link rel="stylesheet" href="./assets/scss/styles.scss">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1>movies for you</h1>
+        </div>
+        <div class="inputs-wrapper grid">
+            <input type="text" id="searchInput" placeholder="Browse movies...">
+            <button id="yearUpBtn" class="sort-btn">Year ↑</button>
+            <button id="yearDownBtn" class="sort-btn">Year ↓</button>
+            <button id="bestRatingBtn" class="sort-btn">Best rating</button>
+        </div>
+    </header>
+    <main>
+        <div id="moviesWrapper" class="grid">
+        </div>
+    </main>    
+</body>
+</html>

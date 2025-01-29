@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Bowlby One";
+  src: url(../fonts/BowlbyOne-Regular.ttf);
+}
+@font-face {
+  font-family: "Domine";
+  src: url(../fonts/Domine-VariableFont_wght.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Domine", serif;
+  background-color: #ffe014;
+  text-align: center;
+  padding: 4rem 14vw;
+}
+
+h1, h3 {
+  font-family: "Bowlby One";
+  font-weight: normal;
+}
+
+input {
+  border: none;
+}
+
+input, button {
+  padding: 1.2rem;
+  font-family: "Domine", serif;
+  letter-spacing: 1px;
+  text-align: center;
+  background-color: #fff;
+}
+
+button {
+  cursor: pointer;
+}
+
+#moviesWrapper > div, button, input {
+  border-radius: 10px;
+  box-shadow: 4px 4px 0px black;
+  border: 1px solid black;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+header .title {
+  margin-bottom: 3rem;
+}
+header .title h1 {
+  font-size: 8rem;
+}
+header .inputs-wrapper #searchInput {
+  grid-column: span 3;
+}
+
+#moviesWrapper > div {
+  padding: 4rem 3rem 4.5rem;
+  background-color: #ff69c1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+  gap: 1.6rem;
+  justify-content: space-between;
+}
+#moviesWrapper > div h3 {
+  font-size: 2.1rem;
+}/*# sourceMappingURL=styles.css.map */
